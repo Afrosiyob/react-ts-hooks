@@ -2,11 +2,11 @@ import { createContext } from "react"
 
 
 
-type UserType  = {
-    name:String,
-    age:Number
+export  type UserType  = {
+    name: String,
+    
 }
 
-export const AuthContext = createContext<object>({
+export const AuthContext = createContext<UserType>({
     name:"user",
 })
